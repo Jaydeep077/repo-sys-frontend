@@ -28,7 +28,7 @@ function Login() {
         <div className="container mt-5">
             <div className="row justify-content-center">
                 <div className="col-md-6">
-                    <div className="card">
+                    <div className="card shadow-sm">
                         <div className="card-body">
                             <h2 className="card-title text-center mb-4">Login</h2>
                             
@@ -79,6 +79,41 @@ function Login() {
                             <p className="text-center mt-3">
                                 Don't have an account? <Link to="/register">Register here</Link>
                             </p>
+
+                            {/* 🔗 GitHub Repositories Section */}
+                            <div className="text-center mt-4">
+                                <h6 className="text-muted mb-2">Project Repositories</h6>
+                                <div className="d-flex justify-content-center gap-4">
+                                    <a
+                                        href="https://github.com/Jaydeep077/repo-sys-backend"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-decoration-none d-flex align-items-center"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub"
+                                            width="25"
+                                            className="me-2"
+                                        />
+                                        <span>Backend</span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/Jaydeep077/repo-sys-frontend"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-decoration-none d-flex align-items-center"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub"
+                                            width="25"
+                                            className="me-2"
+                                        />
+                                        <span>Frontend</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

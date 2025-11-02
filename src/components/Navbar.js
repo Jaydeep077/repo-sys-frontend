@@ -18,7 +18,7 @@ function Navbar() {
                 <Link className="navbar-brand" to="/">
                     RepoSystem
                 </Link>
-                
+
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -27,9 +27,9 @@ function Navbar() {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
+                    <ul className="navbar-nav ms-auto align-items-center">
                         {isAuthenticated ? (
                             <>
                                 <li className="nav-item">
@@ -42,14 +42,52 @@ function Navbar() {
                                         Create Repository
                                     </Link>
                                 </li>
+
+                                {/* 👤 Username */}
                                 <li className="nav-item">
-                                    <span className="nav-link">
+                                    <span className="nav-link text-info fw-semibold">
                                         Hello, {currentUser?.username}
                                     </span>
                                 </li>
+
+                                {/* 🔗 GitHub Links */}
+                                <li className="nav-item mx-2">
+                                    <a
+                                        href="https://github.com/Jaydeep077/repo-sys-backend"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="nav-link d-flex align-items-center"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub"
+                                            width="20"
+                                            className="me-1"
+                                        />
+                                        Backend
+                                    </a>
+                                </li>
+                                <li className="nav-item mx-2">
+                                    <a
+                                        href="https://github.com/Jaydeep077/repo-sys-frontend"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="nav-link d-flex align-items-center"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub"
+                                            width="20"
+                                            className="me-1"
+                                        />
+                                        Frontend
+                                    </a>
+                                </li>
+
+                                {/* 🚪 Logout Button */}
                                 <li className="nav-item">
                                     <button
-                                        className="btn btn-outline-light btn-sm"
+                                        className="btn btn-outline-light btn-sm ms-2"
                                         onClick={handleLogout}
                                     >
                                         Logout
