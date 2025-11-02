@@ -1,0 +1,187 @@
+/* --- Global Styles (index.css) --- */
+
+/* Base font setup */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Larger font sizes for smaller devices — better readability */
+@media (max-width: 992px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 18.5px;
+  }
+}
+
+/* Global body styles */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar dark mode */
+.navbar {
+  background-color: #1e293b !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: #e2e8f0 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #38bdf8 !important;
+}
+
+/* Card styling */
+.card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.card-title {
+  color: #f1f5f9;
+}
+
+.card-text {
+  color: #cbd5e1;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.btn-outline-light {
+  border-color: #f8fafc;
+  color: #f8fafc;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Tables */
+.table {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #334155;
+  color: #e2e8f0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #293548;
+}
+
+/* Forms */
+.form-control, .form-check-input {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+
+.form-control:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+  background-color: #0f172a;
+}
+
+label {
+  color: #e2e8f0;
+}
+
+/* Container layout */
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.mt-5, .mb-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Centered text in cards */
+.card-body {
+  text-align: center;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+p, small {
+  color: #cbd5e1;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
