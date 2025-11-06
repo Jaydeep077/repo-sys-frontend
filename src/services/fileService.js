@@ -21,9 +21,20 @@ const fileService = {
       { responseType: 'blob' }
     );
     return response.data;
-  }
+  },
 
   
+
+
+ deleteFile: async (repoId, fileId) => {
+  try {
+    const response = await axiosInstance.delete(`/repositories/${repoId}/files/${fileId}`);
+    return response.data;
+  } catch {
+    return null; // or return { success: false }
+  }
+},
+
 };
 
 export default fileService;
